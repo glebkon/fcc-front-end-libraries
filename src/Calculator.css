@@ -1,0 +1,77 @@
+.calculator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  margin: 20px auto;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #fff; /* White background for calculator */
+}
+
+#display {
+  font-size: 28px;
+  background-color: #e6e6e6; /* Light gray background for display */
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: right;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  font-size: 20px;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Light gray background for buttons */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+  background-color: #e0e0e0; /* Lighter gray on hover */
+  transform: translateY(-2px);
+}
+
+#clear,
+#zero {
+  grid-column: span 2;
+}
+
+#equals {
+  grid-row: span 2;
+}
+
+#clear {
+  background-color: #ff7f7f; /* Red for clear button */
+  color: white;
+}
+
+#clear:hover {
+  background-color: #ff4d4d; /* Darker red on hover */
+}
+
+#equals {
+  background-color: #7f9fff; /* Blue for equals button */
+  color: white;
+}
+
+#equals:hover {
+  background-color: #4d7fff; /* Darker blue on hover */
+}
+
+#zero:hover {
+  background-color: #e0e0e0; /* Lighter gray on hover */
+  transform: translateY(-2px);
+}
